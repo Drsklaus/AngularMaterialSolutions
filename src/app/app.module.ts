@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
+
+// import {MatCommonModule} from '@angular/material/core';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
@@ -21,13 +27,16 @@ import { ExamplesComponent } from './examples/examples.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    // MatCommonModule,
     MatFormFieldModule,
     MatDividerModule,
     MatButtonModule,
     MatDatepickerModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
